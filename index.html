@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — Unwritten</title>
+    <title>Privacy Policy - Unwritten</title>
     <style>
         * {
             margin: 0;
@@ -26,7 +26,7 @@
             padding: 2rem 0;
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             font-family: Georgia, "Times New Roman", Times, serif;
             font-weight: 700;
             color: #3D2B1F;
@@ -34,50 +34,77 @@
 
         h1 {
             font-size: 2rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .subtitle {
-            font-family: Georgia, "Times New Roman", Times, serif;
-            font-style: italic;
-            font-size: 1.1rem;
-            opacity: 0.7;
-            margin-bottom: 0.5rem;
-        }
-
-        .effective-date {
-            font-size: 0.9rem;
-            opacity: 0.6;
-            margin-bottom: 2.5rem;
-        }
-
-        .intro {
-            font-size: 1.05rem;
-            margin-bottom: 2rem;
-        }
-
-        .intro strong {
-            background: linear-gradient(to top, rgba(61, 43, 31, 0.1) 40%, transparent 40%);
+            margin-bottom: 1rem;
         }
 
         h2 {
             font-size: 1.35rem;
-            margin-top: 2.5rem;
-            margin-bottom: 0.75rem;
+            margin-top: 3.5rem;
+            margin-bottom: 1rem;
             padding-bottom: 0.25rem;
             border-bottom: 1px solid rgba(61, 43, 31, 0.15);
         }
 
-        p {
-            margin-bottom: 1rem;
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 2.25rem;
+            margin-bottom: 0.75rem;
         }
 
-        ul {
-            margin: 0.75rem 0 1rem 1.5rem;
+        h2 + h3 {
+            margin-top: 1.25rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        ul, ol {
+            margin: 1.25rem 0 1.75rem 1.5rem;
         }
 
         li {
             margin-bottom: 0.4rem;
+        }
+
+        li p {
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.25rem 0 1.75rem;
+            font-size: 0.95rem;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            clip-path: inset(50%);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        th, td {
+            text-align: left;
+            vertical-align: top;
+            padding: 0.5rem 0.6rem;
+            border: 1px solid rgba(61, 43, 31, 0.15);
+        }
+
+        th {
+            background: rgba(61, 43, 31, 0.06);
+            font-weight: 700;
+        }
+
+        th p, td p {
+            margin-bottom: 0;
         }
 
         a {
@@ -89,104 +116,18 @@
             opacity: 0.7;
         }
 
-        .contact-email {
-            display: inline-block;
-            margin-top: 0.25rem;
-            font-family: Georgia, "Times New Roman", Times, serif;
-            font-size: 1.1rem;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid rgba(61, 43, 31, 0.15);
-            margin: 2.5rem 0 1.5rem;
-        }
-
-        .footer {
-            font-size: 0.85rem;
-            opacity: 0.5;
-            font-style: italic;
+        @media (max-width: 600px) {
+            table {
+                display: block;
+                overflow-x: auto;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">Unwritten — Write to Unlock</p>
-        <p class="effective-date">Effective Date: March 25, 2026</p>
-
-        <p class="intro">
-            Thank you for using Unwritten. Your privacy matters, and we want to be upfront:
-            <strong>we do not collect any of your data</strong>. This policy explains what that means in practice.
-        </p>
-
-        <h2>Information We Collect</h2>
-        <p>
-            None. Unwritten does not collect, transmit, or store any personal information on external servers.
-            There are no user accounts, no sign-ups, no analytics, no tracking, and no advertising.
-        </p>
-        <p>
-            Your writing content stays entirely on your device. We never see it, and neither does anyone else.
-        </p>
-
-        <h2>How Your Data Is Stored</h2>
-        <p>
-            All app data — including your writing entries, settings, and preferences — is stored locally
-            on your device using on-device storage (MMKV). This data is never uploaded, synced, or backed
-            up to any server we operate.
-        </p>
-        <p>
-            If you delete the app, all locally stored data is permanently removed.
-        </p>
-
-        <h2>Screen Time Permission</h2>
-        <p>
-            Unwritten uses Apple's FamilyControls framework to lock and unlock apps on your device.
-            When you grant Screen Time authorization, the app uses this permission solely to:
-        </p>
-        <ul>
-            <li>Apply app restrictions (shields) at your chosen schedule</li>
-            <li>Remove those restrictions when you complete your daily writing session</li>
-        </ul>
-        <p>
-            This permission is used entirely on-device. No information about your Screen Time usage,
-            restricted apps, or device activity is collected or transmitted anywhere.
-        </p>
-
-        <h2>Third-Party Services</h2>
-        <p>
-            Unwritten does not use any third-party SDKs, services, or APIs that collect data.
-            The app makes no network requests. There is no analytics platform, no crash reporting
-            service, and no advertising framework embedded in the app.
-        </p>
-
-        <h2>Children's Privacy</h2>
-        <p>
-            Unwritten is not directed at children under the age of 13. Because the app collects no
-            data from any user, it does not knowingly collect personal information from children.
-            If you believe a child is using the app in a way that concerns you, please contact us.
-        </p>
-
-        <h2>Changes to This Policy</h2>
-        <p>
-            If we ever update this privacy policy, we will post the revised version here with a new
-            effective date. Since the app makes no network requests, updates to this policy would
-            accompany an app update.
-        </p>
-
-        <h2>Contact</h2>
-        <p>
-            If you have any questions about this privacy policy, please contact us at:
-        </p>
-        <p>
-            <a href="mailto:privacy@unwritten.app" class="contact-email">privacy@unwritten.app</a>
-        </p>
-
-        <hr>
-
-        <p class="footer">
-            This policy applies to the Unwritten iOS app distributed through the Apple App Store.
-        </p>
-    </div>
+<p><em>Effective Date: November 11, 2026</em></p><h2>The Short Version</h2><p>Here&#x27;s what actually matters, before the formal stuff.</p><ul><li><p><strong>Your writing stays on your device.</strong> We cannot read your journal entries. They are stored locally and never uploaded.</p></li><li><p><strong>AI Insights is opt-in, always.</strong> If you enable it, your entry text is sent for analysis. It is off by default. You must turn it on yourself.</p></li><li><p><strong>We collect anonymous usage analytics.</strong> Things like which screens you open. Never your writing. Never your identity.</p></li><li><p><strong>We don&#x27;t sell your data.</strong> There are no ads inside Unwritten. We do advertise Unwritten on other platforms and measure whether those ads work. Details are in Section 2.</p></li><li><p><strong>Delete the app, delete everything.</strong> Removing Unwritten from your phone removes all your data permanently.</p></li></ul><h2>1. Who We Are</h2><p>Unwritten is a mobile journaling app that locks your phone until you complete a daily writing session.</p><p>This privacy policy applies to the Unwritten iOS app distributed through the Apple App Store and to this website, getunwritten.app.</p><p><strong>Questions? Reach us at:</strong> <a href="mailto:privacy@getunwritten.app">privacy@getunwritten.app</a></p><h2>2. What We Collect</h2><h3>What stays on your device</h3><p>The following data never leaves your phone:</p><ul><li><p><strong>Journal entries</strong> — your writing content, word counts, and timestamps</p></li><li><p><strong>App settings</strong> — your lock schedule, word goal, theme preference, and notification preferences</p></li><li><p><strong>Streak data</strong> — your writing streak history and milestones</p></li></ul><p>This data is stored locally using on-device storage (MMKV). We have no access to it. If you delete the app, this data is permanently and immediately removed.</p><h3>What goes to third-party services</h3><p><strong>Anonymous usage analytics</strong></p><p>We collect anonymous analytics events using PostHog (hosted in the United States). These include actions like which screens you open, which features you use, and app lifecycle events such as launch, background, and foreground. Analytics events never include your writing content and are not linked to your identity. We use this data to understand how the app is used and to prioritize improvements.</p><p><strong>Subscription data</strong></p><p>If you subscribe to Unwritten+, your subscription is managed through RevenueCat. RevenueCat receives an anonymous app-specific identifier and purchase transaction data provided by Apple. We do not directly collect or store your payment information. Apple processes all payments.</p><p><strong>Advertising measurement (Meta)</strong></p><p>The app includes Meta&#x27;s software development kit so we can tell whether our ads on Facebook and Instagram lead to installs and subscriptions. It sends Meta app events such as install, first open, and starting a trial or subscription, including the plan and price. It never sends your writing. If you choose &quot;Allow&quot; on Apple&#x27;s tracking prompt, Meta also receives your device&#x27;s advertising identifier so it can match your install to an ad you saw. If you choose &quot;Ask App Not to Track&quot;, the advertising identifier is not shared.</p><p><strong>This website</strong></p><p>getunwritten.app uses PostHog to count visits and taps on the download button. It sets no cookies and does not record your session. If you arrive from an ad, the campaign name in the link is recorded and passed on to the App Store link.</p><p><strong>AI Writing Insights (opt-in only)</strong></p><p>If you choose to enable AI Writing Insights, your journal entry text is transmitted to our server infrastructure for analysis. This feature is off by default. See Section 4 for full details.</p><h3>What we never collect</h3><ul><li><p>Names, email addresses, or contact information</p></li><li><p>Location data</p></li><li><p>Photos, contacts, or other device data</p></li><li><p>Browsing history</p></li><li><p>Advertising identifiers, unless you choose &quot;Allow&quot; on Apple&#x27;s tracking prompt</p></li><li><p>Health or fitness data</p></li></ul><h2>3. How We Use Your Data</h2><table><caption class="visually-hidden">How We Use Your Data</caption><tbody><tr><th scope="col"><p>Data</p></th><th scope="col"><p>Purpose</p></th><th scope="col"><p>Legal Basis (GDPR)</p></th></tr><tr><td><p>Journal entries (on-device)</p></td><td><p>Provide the core writing and journaling experience</p></td><td><p>Contract performance</p></td></tr><tr><td><p>Anonymous analytics events</p></td><td><p>Understand feature usage and improve the app</p></td><td><p>Legitimate interest</p></td></tr><tr><td><p>App events sent to Meta</p></td><td><p>Measure whether our ads lead to installs and subscriptions</p></td><td><p>Legitimate interest. Consent for the advertising identifier.</p></td></tr><tr><td><p>Subscription transaction data</p></td><td><p>Verify your Unwritten+ subscription status</p></td><td><p>Contract performance</p></td></tr><tr><td><p>Journal entry text (AI Insights)</p></td><td><p>Generate emotion tags, summaries, and topic analysis</p></td><td><p>Explicit consent</p></td></tr></tbody></table><h2>4. AI-Powered Features</h2><p>Unwritten offers an optional AI Writing Insights feature that analyzes your journal entries to identify emotions, generate brief summaries, and extract topics.</p><h3>How it works</h3><ol><li><p>You enable AI Writing Insights in Settings (off by default)</p></li><li><p>Before activation, we show you a clear disclosure explaining what data is transmitted</p></li><li><p>When you complete a writing session, your entry text is sent from your device to our server (hosted on Supabase, AWS US East) via HTTPS</p></li><li><p>Our server forwards your text to OpenRouter, which routes it to Anthropic&#x27;s Claude language model for analysis</p></li><li><p>The AI returns a short analysis: 1–2 emotions, a brief summary, and 1–3 topics</p></li><li><p>The analysis is sent back to your device and stored locally</p></li><li><p>Your entry text is processed in memory — it is not permanently stored on any server</p></li></ol><h3>Third-party AI providers</h3><ul><li><p><strong>Supabase</strong> (supabase.com) — hosts our server-side function that processes your request. Your entry text passes through Supabase infrastructure during analysis. Supabase&#x27;s data processing agreement: supabase.com/legal/dpa</p></li><li><p><strong>OpenRouter</strong> (openrouter.ai) — routes your text to the AI model. Privacy policy: openrouter.ai/privacy</p></li><li><p><strong>Anthropic</strong> (anthropic.com) — provides the Claude language model that performs the analysis. Privacy policy: anthropic.com/privacy</p></li></ul><h3>Your controls</h3><ul><li><p>AI Writing Insights is <strong>off by default</strong>. You must explicitly enable it.</p></li><li><p>You can disable it at any time in Settings. Disabling it stops all future text transmission immediately.</p></li><li><p>The core app — writing, phone locking, journaling, streaks — works fully without AI Insights.</p></li><li><p>Your writing is <strong>not used to train AI models</strong>. OpenRouter is configured with zero data retention for requests made through Unwritten.</p></li></ul><h2>5. Screen Time and Device Controls</h2><p>Unwritten uses Apple&#x27;s FamilyControls and ManagedSettings frameworks to apply and remove app restrictions on your device.</p><p>When you grant Screen Time authorization:</p><ul><li><p>The app applies shields (restrictions) to other apps at your chosen schedule</p></li><li><p>The app removes those shields when you complete your daily writing session</p></li><li><p>All enforcement happens entirely on your device through Apple&#x27;s system frameworks</p></li><li><p>The app uses opaque tokens provided by Apple — it never knows which specific apps are on your device or how you use them</p></li><li><p>No Screen Time data, device activity data, or app usage data is collected or transmitted</p></li></ul><p>You can revoke Screen Time authorization at any time through your device&#x27;s Settings app.</p><h2>6. Third-Party Services</h2><table><caption class="visually-hidden">Third-Party Services</caption><tbody><tr><th scope="col"><p>Service</p></th><th scope="col"><p>Purpose</p></th><th scope="col"><p>Data Received</p></th><th scope="col"><p>Privacy Policy</p></th></tr><tr><td><p><strong>PostHog</strong></p></td><td><p>Anonymous usage analytics</p></td><td><p>Feature usage events, anonymous device ID. No writing content.</p></td><td><p>posthog.com/privacy</p></td></tr><tr><td><p><strong>RevenueCat</strong></p></td><td><p>Subscription management</p></td><td><p>Anonymous app user ID, purchase transactions from Apple</p></td><td><p>revenuecat.com/privacy</p></td></tr><tr><td><p><strong>Meta</strong></p></td><td><p>Ad measurement</p></td><td><p>App events (install, trial, subscription with plan and price). Advertising identifier only if you allow tracking. No writing content.</p></td><td><p>facebook.com/privacy/policy</p></td></tr><tr><td><p><strong>Supabase</strong></p></td><td><p>AI Insights server infrastructure</p></td><td><p>Entry text when AI Insights is enabled. Anonymous user ID for rate limiting.</p></td><td><p>supabase.com/legal/dpa</p></td></tr><tr><td><p><strong>OpenRouter</strong></p></td><td><p>AI analysis routing</p></td><td><p>Entry text when AI Insights is enabled</p></td><td><p>openrouter.ai/privacy</p></td></tr><tr><td><p><strong>Anthropic</strong></p></td><td><p>AI language model (Claude)</p></td><td><p>Entry text when AI Insights is enabled</p></td><td><p>anthropic.com/privacy</p></td></tr></tbody></table><p>We do not share your data with any other third parties. We do not sell your data — to anyone.</p><h2>7. Data Retention</h2><ul><li><p><strong>On-device data</strong> — retained until you delete the app or clear app data. We have no access to this data.</p></li><li><p><strong>Analytics data</strong> — PostHog retains anonymous event data according to their standard retention policy.</p></li><li><p><strong>Subscription data</strong> — RevenueCat retains transaction records as required for subscription management and financial compliance.</p></li><li><p><strong>AI Insights text</strong> — processed in memory during analysis and not permanently stored on our servers. Analysis results are returned to your device and stored locally.</p></li><li><p><strong>Rate limiting records</strong> — we store an anonymous user identifier and a daily request count on Supabase to enforce usage limits for AI Insights. This contains no writing content.</p></li></ul><h2>8. Security</h2><ul><li><p>All data transmitted from the app uses HTTPS (TLS 1.2 or higher)</p></li><li><p>On-device data is stored using MMKV, which leverages iOS hardware encryption</p></li><li><p>Our server infrastructure (Supabase) uses AES-256 encryption at rest</p></li><li><p>AI Insights uses anonymous authentication — no personally identifiable credentials are stored</p></li><li><p>Server-side API keys are stored as encrypted secrets and are never embedded in the app</p></li></ul><h2>9. Your Rights and Choices</h2><h3>All users</h3><ul><li><p>Disable AI Writing Insights at any time in Settings</p></li><li><p>Delete all your data by deleting the app</p></li><li><p>Manage or cancel your subscription through Apple&#x27;s subscription settings</p></li></ul><h3>Users in the European Economic Area (GDPR)</h3><p>You have the right to access, correct, delete, restrict processing of, and port your personal data. You also have the right to withdraw consent for AI Insights processing at any time and to lodge a complaint with your local data protection authority.</p><p>Because your journal data is stored only on your device, most of these rights are exercised directly through the app. For analytics data, contact us at <a href="mailto:privacy@getunwritten.app">privacy@getunwritten.app</a>.</p><h3>Users in California (CCPA/CPRA)</h3><p>You have the right to know what personal information we collect, to request deletion of your personal information, and to opt out of the sale of personal information.</p><p>We do not sell personal information. To exercise your rights, contact us at <a href="mailto:privacy@getunwritten.app">privacy@getunwritten.app</a>.</p><h2>10. Children&#x27;s Privacy</h2><p>Unwritten is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p><p>If we become aware that we have inadvertently collected personal information from a child under 13, we will take steps to delete that information promptly. If you believe a child under 13 has provided us with personal information, please contact us at <a href="mailto:privacy@getunwritten.app">privacy@getunwritten.app</a>.</p><h2>11. International Data Transfers</h2><p>If you use Unwritten outside the United States, your data may be transferred to and processed in the United States through our third-party service providers (PostHog, Meta, Supabase, OpenRouter, Anthropic). These transfers occur only for the purposes described in this policy.</p><h2>12. Changes to This Policy</h2><p>We may update this privacy policy from time to time. When we make changes, we will update the effective date at the top of this page.</p><p>For significant changes, we will provide notice through an app update. We encourage you to review this policy periodically.</p><h2>13. Contact Us</h2><p>Have questions or concerns about this policy or our data practices? We&#x27;d genuinely like to hear from you.</p><p><a href="mailto:privacy@getunwritten.app"><strong>privacy@getunwritten.app</strong></a></p><p><em>This policy applies to the Unwritten iOS app distributed through the Apple App Store and to getunwritten.app.</em></p>
+    </main>
 </body>
 </html>
